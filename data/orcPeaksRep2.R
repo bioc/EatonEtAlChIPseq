@@ -5,5 +5,5 @@ orcPeaksRep2 <-
                                          package = "EatonEtAlChIPseq"),
                              format = "bed"), "GRanges"))
 elementMetadata(orcPeaksRep2)[["name"]] <- NULL
-levels(seqnames(orcPeaksRep2)) <- "chrXIV"
+seqlevels(orcPeaksRep2) <- "chrXIV"
 seqlengths(orcPeaksRep2) <- 784333
