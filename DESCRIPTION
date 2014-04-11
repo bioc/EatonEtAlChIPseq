@@ -2,7 +2,7 @@ Package: EatonEtAlChIPseq
 Title: ChIP-seq data of ORC-binding sites in Yeast excerpted from Eaton et al. 2010
 Description: ChIP-seq analysis subset from "Conserved nucleosome positioning
   defines replication origins" (PMID 20351051)
-Version: 0.0.11
+Version: 0.2.0
 Author: Patrick Aboyoun <paboyoun@fhcrc.org>
 Maintainer: Patrick Aboyoun <paboyoun@fhcrc.org>
 Depends: GenomicRanges (>= 1.5.42), ShortRead, rtracklayer
