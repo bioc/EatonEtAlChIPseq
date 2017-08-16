@@ -1,0 +1,30 @@
+# Data from ChIP-seq experiment from
+# Conserved nucleosome positioning defines replication origins
+# Eaton ML, Galani K, Kang S, Bell SP, Macalpine DM
+# PMID: 20351051
+# http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM424494
+
+# MAQ alignments
+curl -O ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424494/GSM424494_wt_G2_orc_chip_rep1.mapview.txt.gz
+gunzip GSM424494_wt_G2_orc_chip_rep1.mapview.txt.gz
+grep S288C_14 GSM424494_wt_G2_orc_chip_rep1.mapview.txt > GSM424494_wt_G2_orc_chip_rep1_S288C_14.mapview.txt
+gzip GSM424494_wt_G2_orc_chip_rep1_S288C_14.mapview.txt
+rm GSM424494_wt_G2_orc_chip_rep1.mapview.txt
+
+curl -O ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424494/GSM424494_wt_G2_orc_chip_rep2.mapview.txt.gz
+gunzip GSM424494_wt_G2_orc_chip_rep2.mapview.txt.gz
+grep S288C_14 GSM424494_wt_G2_orc_chip_rep2.mapview.txt > GSM424494_wt_G2_orc_chip_rep2_S288C_14.mapview.txt
+gzip GSM424494_wt_G2_orc_chip_rep2_S288C_14.mapview.txt
+rm GSM424494_wt_G2_orc_chip_rep2.mapview.txt
+
+# Peak calls
+curl -O ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424494/GSM424494_wt_G2_orc_chip_rep1.bed.gz
+gunzip GSM424494_wt_G2_orc_chip_rep1.bed.gz
+grep "^14" GSM424494_wt_G2_orc_chip_rep1.bed > GSM424494_wt_G2_orc_chip_rep1_14.bed
+rm GSM424494_wt_G2_orc_chip_rep1.bed
+
+curl -O ftp://ftp.ncbi.nih.gov/pub/geo/DATA/supplementary/samples/GSM424nnn/GSM424494/GSM424494_wt_G2_orc_chip_rep2.bed.gz
+gunzip GSM424494_wt_G2_orc_chip_rep2.bed.gz
+grep "^14" GSM424494_wt_G2_orc_chip_rep2.bed > GSM424494_wt_G2_orc_chip_rep2_14.bed
+rm GSM424494_wt_G2_orc_chip_rep2.bed
+
